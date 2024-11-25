@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function myperson(first, last, eye,age){
+            this.age = age;
+            this.firstName = first;
+            this.lastName = last;
+            this.eyecolor = eye; 
+        }
+        const myFather = new myperson("dbdhu", "dhv gv", "black", 18);
+        const myMother = new myperson("ygvhvb", "pgyhbj", "tftyfj", 19);
+
+        document.getElementById("demo").innerHTML = "My father name is: " + myFather.firstName +  "<br>" + "my mother age is: " + myMother.age;        
+    </script>
+</body>
+</html>
